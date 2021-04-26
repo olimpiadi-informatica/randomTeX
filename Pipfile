@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jinja2 = "*"
+"ruamel.yaml" = "*"
+progressbar2 = "*"
+
+[scripts]
+randomtex = "python ./randomtex.py"
+gen_example = "python ./gen_example.py"
+gen_password = "python ./gen_password.py"
+cleanup_data = "python ./cleanup_data.py"
+
+[dev-packages]
+black = "*"
+
+[requires]
+python_version = "3.9"
+
+[pipenv]
+allow_prereleases = true
